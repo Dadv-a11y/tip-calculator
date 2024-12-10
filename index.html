@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+   <div class="logo"><img src="images\logo.svg" alt="logo"></div>
+ <div class="container">
+  <div class="tipCalculator">
+  
+    <div class="label"><label for="Bill">Bill</label><span id="billerror">this couldn't be zero</span></div>
+   <input type="number" id="Bill" name="bill">
+   
+   <div class="tip" id="tip"><span class="label"> Select Tip %</span>
+   
+    <button class="b5" onclick="tip5()"> 5% </button>
+    <button class="b10" onclick="tip10()"> 10%</button>
+    <button class="b15" onclick="tip15()">15%</button>
+    <button class="b25"onclick="tip25()"> 25%</button>
+    <button class="b50"onclick="tip50()"> 50% </button>
+   <input type="number" placeholder=" Custom " name="custom"  id="custom">
+  
+  </div>
+   
+   <div class="label"><label for="Number"> Number of People</label><span id="numbererror">this couldn't be zero</span></div>
+  <input type="number" id="Number" name=" NumberOfPeople">
+  
+  </div>
+   <div class="result">
+   <p> Tip Amount <span>/ person</span></p><span id="totalamount">$0.00</span>
+   <p>Total <span> / person</span></p><span id="amountperperson">$0.00</span>
+   <button id="Reset"> Reset</button>
+   </div>
+ </div>
+
+ <script src="script.js"></script>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Dadv-a11y">DADV</a>.
+  </div>
+ </div>
+</body>
+</html>
