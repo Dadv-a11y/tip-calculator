@@ -10,22 +10,52 @@ let tipAmounts=0 ;
 function tip5(){
    let tip = 5 ;
    displaytipAmount(tip);
+   if(numberPeopleinput==1){
+    amountperperson.innerText='$0.00'
+}
+else{
+    displayAmountPerPerson(numberPeopleinput)
+}
 }
 function tip10(){
    let tip = 10 ;
    displaytipAmount(tip);
+   if(numberPeopleinput==1){
+    amountperperson.innerText='$0.00'
+}
+else{
+    displayAmountPerPerson(numberPeopleinput)
+}
 }
 function tip15(){
    let tip = 15 ;
    displaytipAmount(tip);
+   if(numberPeopleinput==1){
+    amountperperson.innerText='$0.00'
+}
+else{
+    displayAmountPerPerson(numberPeopleinput)
+}
 }
 function tip25(){
    let tip = 25 ;
    displaytipAmount(tip);
+   if(numberPeopleinput==1){
+    amountperperson.innerText='$0.00'
+}
+else{
+    displayAmountPerPerson(numberPeopleinput)
+}
 }
 function tip50(){
    let tip = 50 ;
    displaytipAmount(tip);
+   if(numberPeopleinput==1){
+    amountperperson.innerText='$0.00'
+}
+else{
+    displayAmountPerPerson(numberPeopleinput)
+}
 }
  custom.addEventListener('keyup',function(){
     let tip = custom.value;
